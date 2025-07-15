@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png" type="image/jpeg">
     <meta name="description" content="Pagina tipo CV de Leonardo Chopitea.">
     <title>Trabajo JC</title>
@@ -10,28 +11,36 @@
 
 </head>
 <body>
-    <div>
+    <div class="navbar">
     <h1>Portafolio de Leonardo Chopi</h1>
-    <nav>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#referencias">Referencias</a>
-        <a href="#contactos">Contactos</a>
+    <nav class="References-NavBar">
+        <a href="#sobre-Mí">
+            <img src="Img/SobreMi.png" alt="Sobre Mí" class="Img-NavBar">
+        </a>
+        <a href="#proyectos">
+            <img src="Img/Proyectos.png" alt="Proyectos" class="Img-NavBar">
+        </a>
+        <a href="#referencias">
+            <img src="Img/Referencias.png" alt="Referencias" class="Img-NavBar">
+        </a>
+        <a href="#contactos">
+            <img src="Img/Contactos.png" alt="Contactos" class="Img-NavBar">
+        </a>
     </nav>
     </div>
     
     <div><!-- Contenedor Principal -->
 
-        <!-- Sobre Nosotros -->
-        <section id="sobre-nosotros">  <!-- Seccion 1 -->
-            <h2>Sobre Nosotros</h2> <!-- Titulo de la seccion -->
+        <!-- Sobre Mí -->
+        <section id="sobre-Mí" class="Card-Seccion">  <!-- Seccion 1 -->
+            <h2>Sobre Mí</h2> <!-- Titulo de la seccion -->
             
             <div>
                 <img src="Perfil.jpg" alt="Foto de Perfil" width="200" height="200">
                 <h3>Leonardo Chopitea</h3> <!-- Nombre de la persona-->
             </div>
 
-            <div>
+            <div class="descripcion"> <!-- Descripcion de la persona -->
                 <p> <!-- Descripcion de la persona -->
                    Descripción: Leonardo es una persona curiosa, meticulosa y con una fuerte orientación autodidacta. Su interés por la tecnología y la informática se manifiesta en diversos aspectos: ha trabajado con Git y GitHub, explora el desarrollo web con HTML y CSS, y experimenta con routers MikroTik, no con fines comerciales sino como medio de aprendizaje técnico. También muestra un enfoque metódico al abordar problemas técnicos, como lo demuestra en sus consultas sobre redes, almacenamiento en NAS, teclados mecánicos y esquemas relacionales en bases de datos. <br>
                    Además de sus habilidades técnicas, Leonardo tiene una vena creativa: ha desarrollado un portafolio web personal (con su nombre artístico o alias: "Leonardo Chopi") y ha trabajado en proyectos de documentación estructurada, como análisis FODA, esquemas ER y especificaciones de requerimientos de software (ERS) siguiendo el estándar IEEE 830. Esto indica que no solo se interesa por el código, sino también por la planificación y documentación de sistemas. <br>
@@ -54,22 +63,22 @@
             </div>
 
         </section>
-        <br>
-        <br>
+
         <!-- Proyectos -->
-        <section id="proyectos"> <!-- Seccion 2 -->
+        <section id="proyectos" class="Card-Seccion"> <!-- Seccion 2 -->
             <h2>Proyectos</h2> <!-- Titulo de la seccion -->
 
             <div> <!-- Contenedor de proyectos -->
 
                 <div> <!-- Card Template Proyects -->
-                    <div> <!-- Proyecto 1 -->
+                    <div class="card-Internas"> <!-- Proyecto 1 -->
                         <h3>Olimpiadas de programación</h3> <!-- Titulo del proyecto -->
                         <p>Descripción: Participación en el grupo ganador de las olimpiadas de programación de segundo ciclo del año 2024</p> <!-- Descripcion del proyecto -->
                         <a href="https://www.diariocronicas.com.uy/index.php?id_prod=58085&id_cat=9&noticia=Estudiantes%20mercedarios%20premiados%20en%20Montevideo" target="_blank">Ver artículo</a> <!-- Link al articulo del proyecto -->
                         <a href="https://www.agesor.com.uy/noticia.php?id=74495" target="_blank">Ver artículo</a> <!-- Link al articulo del proyecto -->
                     </div>
-                    <div> <!-- Proyecto 2 -->
+                    <br>
+                    <div class="card-Internas"> <!-- Proyecto 2 -->
                         <h3>Participación en proyecto intendencia</h3> <!-- Titulo del proyecto -->
                         <p>Descripción: Como proyecto final de UTU (año 2025) se planea realizar una página para la intendencia, donde se puedan reportar calles y veredas rotas para que la misma pueda repararlas</p> <!-- Descripcion del proyecto --> 
                         <a href="http://Mivereda.site" target="_blank">Ver página (en proceso)</a> <!-- Link a la pagina del proyecto -->
@@ -78,60 +87,58 @@
 
             </div>
         </section>
-        <br>
-        <br>
+
         <!-- Referencias -->
-        <section id="referencias"> <!-- Seccion 3 -->
+        <section id="referencias" class="Card-Seccion"> <!-- Seccion 3 -->
             <h2>Referencias</h2> <!-- Titulo de la seccion -->
 
-            <div> <!-- Contenedor de referencias -->
+            <div class="Card-References"> <!-- Contenedor de referencias -->
                 <div> <!-- Card Template References -->
-                    <div> <!-- Referencia 1 -->
-                        <div><img src="" alt="ImgReference"></div>
-                        <h4>🧑‍💼Nombre: Armando Banquitos</h4>
-                        <p>💼Ocupación/Título: ...</p>
-                        <p>📝Referencia: ...</p>
-                        <p>📞Teléfono: ...</p>
-                        <p>✉️Email: ...</p>
-                    </div>
-                <br>
-                    <div> <!-- Referencia 2 -->
-                        <div><img src="" alt="ImgReference"></div>
-                        <h4>🧑‍💼Nombre: Armando Casas</h4>
-                        <p>💼Ocupación/Título: ...</p>
-                        <p>📝Referencia: ...</p>
-                        <p>📞Teléfono: ...</p>
-                        <p>✉️Email: ...</p>
-                    </div>
-                <br>
-                    <div> <!-- Referencia 3 -->
-                        <div><img src="" alt="ImgReference"></div>
-                        <h4>🧑‍💼Nombre: Elvis Nieto</h4>
-                        <p>💼Ocupación/Título: ...</p>
-                        <p>📝Referencia: ...</p>
-                        <p>📞Teléfono: ...</p>
-                        <p>✉️Email: ...</p>
-                    </div>
+                    <div class="card-Internas"> <!-- Referencia 1 -->
+                         <div><img src="img/armando_banq.jpg" alt="ImgReference"></div>
+                            <h4>🧑‍💼Nombre: Armando Banquitos</h4>
+                            <p>💼Ocupación/Título: Gerente de Proyectos en Constructora Sur S.A.</p> 
+                            <p>📝Referencia: Fue mi supervisor directo durante 3 años en el área de obras civiles.</p> 
+                            <p>📞Teléfono: +598 99 123 456</p> 
+                            <p>✉️Email: armando.banquitos@conssur.com.uy</p>
+                         </div>
+                         <br>
+                         <div class="card-Internas"> <!-- Referencia 2 -->
+                                <div><img src="img/armando_casas.jpg" alt="ImgReference"></div>
+                                <h4>🧑‍💼Nombre: Armando Casas</h4>
+                                <p>💼Ocupación/Título: Arquitecto independiente</p> 
+                                <p>📝Referencia: Colaboramos en varios proyectos residenciales entre 2020 y 2023.</p> 
+                                <p>📞Teléfono: +598 91 456 789</p>
+                                <p>✉️Email: armando.casas@gmail.com</p>
+                         </div>
+                         <br>
+                         <div class="card-Internas"> <!-- Referencia 3 -->
+                                <div><img src="img/elvis_nieto.jpg" alt="ImgReference"></div>
+                                <h4>🧑‍💼Nombre: Elvis Nieto</h4>
+                                <p>💼Ocupación/Título: Jefe de Tecnología en TecnoSoluciones S.R.L.</p>
+                                <p>📝Referencia: Trabajo conjunto en implementación de soluciones IT para clientes corporativos.</p>
+                                <p>📞Teléfono: +598 92 321 654</p>
+                                <p>✉️Email: e.nieto@tecnosol.com</p>
+                         </div>
                 </div>
             </div>
 
         </section>
-        <br>
-        <br>
-        <!-- Contactos -->
-        <section id="contactos"> <!-- Seccion 4 -->
-            <h2>Contactos</h2> <!-- Titulo de la seccion -->
 
-            <div>
+        <!-- Contactos -->
+        <section id="contactos" class="Card-contactos"> <!-- Seccion 4 -->
+            <h2>Contactos</h2 class="Card-Seccion"> <!-- Titulo de la seccion -->
+
+            <div> <!-- Contenedor de contactos -->
                 <form> <!-- Formulario de contacto -->
                     <label for="nombre">Nombre:</label><br> <!-- Etiqueta para el campo de nombre -->
-                    <input type="text" id="nombre" name="nombre" required><br><br> <!-- Campo de entrada para el nombre -->
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre aquí" required><br><br> <!-- Campo de entrada para el nombre -->
 
                     <label for="email">Correo electrónico:</label><br> <!-- Etiqueta para el campo de correo electrónico -->
-                    <input type="email" id="email" name="email" required><br><br> <!-- Campo de entrada para el correo electrónico -->
+                    <input type="email" id="email" name="email" placeholder="Escribí tu correo aquí" required><br><br> <!-- Campo de entrada para el correo electrónico -->
 
                     <label for="mensaje">Mensaje:</label><br> <!-- Etiqueta para el campo de mensaje -->
-                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br> <!-- Campo de entrada para el mensaje -->
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Escribí tu mensaje aquí" required></textarea><br><br> <!-- Campo de entrada para el mensaje -->
 
                     <input type="submit" value="Enviar"> <!-- Botón de envío del formulario -->
                     <input type="reset" value="Borrar"> <!-- Botón para borrar el formulario -->
