@@ -42,7 +42,7 @@
 
             <div class="descripcion"> <!-- Descripcion de la persona -->
                 <p> <!-- Descripcion de la persona -->
-                   Descripción: Leonardo es una persona curiosa, meticulosa y con una fuerte orientación autodidacta. Su interés por la tecnología y la informática se manifiesta en diversos aspectos: ha trabajado con Git y GitHub, explora el desarrollo web con HTML y CSS, y experimenta con routers MikroTik, no con fines comerciales sino como medio de aprendizaje técnico. También muestra un enfoque metódico al abordar problemas técnicos, como lo demuestra en sus consultas sobre redes, almacenamiento en NAS, teclados mecánicos y esquemas relacionales en bases de datos. <br>
+                   Descripción (Yo según chat): Leonardo es una persona curiosa, meticulosa y con una fuerte orientación autodidacta. Su interés por la tecnología y la informática se manifiesta en diversos aspectos: ha trabajado con Git y GitHub, explora el desarrollo web con HTML y CSS, y experimenta con routers MikroTik, no con fines comerciales sino como medio de aprendizaje técnico. También muestra un enfoque metódico al abordar problemas técnicos, como lo demuestra en sus consultas sobre redes, almacenamiento en NAS, teclados mecánicos y esquemas relacionales en bases de datos. <br>
                    Además de sus habilidades técnicas, Leonardo tiene una vena creativa: ha desarrollado un portafolio web personal (con su nombre artístico o alias: "Leonardo Chopi") y ha trabajado en proyectos de documentación estructurada, como análisis FODA, esquemas ER y especificaciones de requerimientos de software (ERS) siguiendo el estándar IEEE 830. Esto indica que no solo se interesa por el código, sino también por la planificación y documentación de sistemas. <br>
                    Tiene una afinidad con el diseño estructurado, tanto en software como en pensamiento lógico, lo cual se nota en cómo resuelve problemas de física (como ejercicios de estática o torque) y cómo estructura sus consultas sobre bases de datos o arquitectura de sistemas <br>
                    En cuanto a sus intereses lúdicos, ha mostrado curiosidad por videojuegos como Minecraft y Call of Duty, abordándolos incluso desde un ángulo técnico (modificaciones, rendimiento, clases óptimas). También se interesa por temas generales como el invierno nuclear, fenómenos históricos como la extinción de los dinosaurios, y aspectos culturales como el significado de los números en la quiniela uruguaya. <br>
@@ -73,7 +73,7 @@
                 <div> <!-- Card Template Proyects -->
                     <div class="card-Internas"> <!-- Proyecto 1 -->
                         <h3>Olimpiadas de programación</h3> <!-- Titulo del proyecto -->
-                        <p>Descripción: Participación en el grupo ganador de las olimpiadas de programación de segundo ciclo del año 2024</p> <!-- Descripcion del proyecto -->
+                        <p>Descripción: Participación en el grupo ganador de las olimpiadas de programación de segundo ciclo del año 2024</p> <!-- Descripcion del proyecto --> 
                         <a href="https://www.diariocronicas.com.uy/index.php?id_prod=58085&id_cat=9&noticia=Estudiantes%20mercedarios%20premiados%20en%20Montevideo" target="_blank">Ver artículo</a> <!-- Link al articulo del proyecto -->
                         <a href="https://www.agesor.com.uy/noticia.php?id=74495" target="_blank">Ver artículo</a> <!-- Link al articulo del proyecto -->
                     </div>
@@ -131,17 +131,39 @@
 
             <div> <!-- Contenedor de contactos -->
                 <form> <!-- Formulario de contacto -->
-                    <label for="nombre">Nombre:</label><br> <!-- Etiqueta para el campo de nombre -->
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre aquí" required><br><br> <!-- Campo de entrada para el nombre -->
+                    <div class="Cent-Form"> <!-- Centrado del formulario -->
+                        <label for="nombre">Nombre:</label><br> <!-- Etiqueta para el campo de nombre -->
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre aquí" required><br><br> <!-- Campo de entrada para el nombre -->
 
-                    <label for="email">Correo electrónico:</label><br> <!-- Etiqueta para el campo de correo electrónico -->
-                    <input type="email" id="email" name="email" placeholder="Escribí tu correo aquí" required><br><br> <!-- Campo de entrada para el correo electrónico -->
+                    <p>    </p> <!-- Espacio en blanco entre los campos -->
 
-                    <label for="mensaje">Mensaje:</label><br> <!-- Etiqueta para el campo de mensaje -->
-                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Escribí tu mensaje aquí" required></textarea><br><br> <!-- Campo de entrada para el mensaje -->
+                        <label for="email">Correo electrónico:</label><br> <!-- Etiqueta para el campo de correo electrónico -->
+                        <input type="email" id="email" name="email" placeholder="Escribí tu correo aquí" required><br><br> <!-- Campo de entrada para el correo electrónico -->
+                    </div>
+                    <br>
+                    <div class="Cent-Form">                        
+                        </label><label for="tel">Telefono:</label><br> <!-- Etiqueta para el campo de Telefono -->
+                        <input type="number" id="Telefono" name="Telefono" placeholder="Escribí tu Telefono aquí" required><br><br> <!-- Campo de entrada para el Telefono -->
 
-                    <input type="submit" value="Enviar"> <!-- Botón de envío del formulario -->
-                    <input type="reset" value="Borrar"> <!-- Botón para borrar el formulario -->
+                    <p>    </p> <!-- Espacio en blanco entre los campos -->
+
+                        <label for="tipo-contacto">Tipo de contacto:</label>
+                            <select id="tipo-contacto" name="tipo-contacto" required>
+                             <option value="" disabled selected hidden>Elegí una opción</option>
+                             <option value="contacto">Contacto</option>
+                             <option value="consulta">Consulta</option>
+                             <option value="reclamo">Reclamo</option>
+                             <option value="otro">Otro</option>
+                            </select> 
+
+                    </div>
+                    <br>
+                        
+                        <label for="mensaje">Mensaje:</label><br> <!-- Etiqueta para el campo de mensaje -->
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Escribí tu mensaje aquí" required></textarea><br><br> <!-- Campo de entrada para el mensaje -->
+                    
+                        <input type="submit" value="Enviar" class="BotonForm"> <!-- Botón de envío del formulario -->
+                        <input type="reset" value="Borrar" class="BotonForm"> <!-- Botón para borrar el formulario -->
                  </form> 
             </div>
         </section>

@@ -1,0 +1,76 @@
+body {
+    background-color: #a9c4dc; /*color de fondo*/
+    font-family: 'Comic Sans MS', cursive, sans-serif;/*fuente*/
+}
+
+.navbar {
+    background-color: #b3dcff; /*color de fondo del navbar*/
+    padding: 10px; /*espaciado del navbar*/
+    display: flex; /*poner tods los objetos en una fila*/
+    justify-content: space-between; /*espacio entre los objetos*/
+    align-items: center; /*alinear los objetos al centro*/
+    gap: 10px; /*espacio entre los objetos*/
+}
+
+.References-NavBar {
+    display: flex; /*poner tods los objetos en una fila*/
+    gap: 15px; /*espacio entre los objetos*/
+}
+
+.Img-NavBar {
+   width: 100px; /*ancho de la imagen del navbar*/
+   height: auto; /*alto de la imagen del navbar*/
+}
+
+.Card-Seccion {
+    border-radius: 15px; /*bordes redondeados*/
+    border: 1px solid #ccc; /*borde de la tarjeta*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*sombra de la tarjeta*/
+    padding: 20px; /*espaciado de la tarjeta*/
+    background-color: #ffffff; /*color de fondo de la tarjeta*/
+    margin: 10px auto; /*margen de la tarjeta*/
+    /* max-width: auto; */ 
+}
+
+a, .BotonForm {
+    text-decoration: none; /*sin subrayado*/
+    background-color: #b3dcff; /*color de fondo del boton*/
+    color: white; /*color del texto del boton*/
+    padding: 10px 20px; /*espaciado del boton*/
+    border: none; /*sin borde*/
+    border-radius: 5px; /*bordes redondeados del boton*/
+}
+
+.card-Internas {
+    border-radius: 15px; /*bordes redondeados*/
+    border: 1px solid #ccc; /*borde de la tarjeta*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*sombra de la tarjeta*/
+    padding: 20px; /*espaciado de la tarjeta*/
+    background-color: #ffffff; /*color de fondo de la tarjeta*/
+    flex: 0 1 300px; /*flexibilidad de la tarjeta*/
+    box-sizing: border-box; /*caja de la tarjeta*/
+}
+
+.card-contacto {
+    align-items: center ; /*alinear los objetos al centro*/
+}
+
+.Card-contactos {
+  background-color: white; /*color de fondo de la tarjeta de contactos*/
+  padding: 25px 30px; /*espaciado de la tarjeta de contactos*/
+  border-radius: 12px; /*bordes redondeados de la tarjeta de contactos*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*sombra de la tarjeta de contactos*/
+  max-width: 600px; /*ancho máximo de la tarjeta de contactos*/
+  margin: 20px auto; /*margen de la tarjeta de contactos*/
+  text-align: center; /*alinear el texto al centro*/
+}
+
+footer {
+    text-align: center; /*alinear el texto al centro*/
+}
+
+.Cent-Form {
+    display: flex; /*poner todos los objetos en una fila*/
+    justify-content: center; /*centrar los objetos*/
+    align-items: center; /*alinear los objetos al centro*/
+}
