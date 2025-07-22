@@ -20,15 +20,6 @@ body {
     flex-wrap: nowrap; /*no permitir que los objetos se ajusten a la pantalla en pc*/
 }
 
-@media screen and (max-width: 768px) { /*768 Es el punto de quiebre estándar (breakpoint)*/
-    .References-NavBar { 
-        display: grid; /*poner los objetos en una cuadrícula*/
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-        gap: 10px; /*espacio entre los objetos*/
-        justify-items: center; /*centrar los objetos*/
-    }
-}
-
 .Img-NavBar {
    width: 100px; /*ancho de la imagen del navbar*/
    height: auto; /*alto de la imagen del navbar*/
@@ -54,6 +45,7 @@ a, .BotonForm {
 }   
 
 .card-Internas {
+    /* max-width: 600px; ancho máximo de la tarjeta */  
     border-radius: 15px; /*bordes redondeados*/
     border: 1px solid #ccc; /*borde de la tarjeta*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*sombra de la tarjeta*/
@@ -89,12 +81,6 @@ footer {
     flex-wrap: wrap;     /* Por si hay muchos elementos */
 }
 
-@media screen and (max-width: 768px) { /*768 Es el punto de quiebre estándar (breakpoint)*/
-    .Cent-Form {
-        flex-direction: column; /* En celular es en columna */
-    }
-}
-
 input, textarea, select{
     /* width: 30%; ancho del input */
     padding: 10px; /*espaciado del input*/
@@ -102,4 +88,40 @@ input, textarea, select{
     border: 1px solid #ccc; /*borde del input*/
     box-sizing: border-box; /*caja del input*/
     margin-bottom: 10px; /*margen inferior del input*/
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) { /*768 Es el punto de quiebre estándar (breakpoint)*/
+    input, textarea, select {
+        width: 90%; /*ancho del input en celular*/
+    }
+
+    .Cent-Form {
+        align-items: center; /*centrar los objetos*/
+        justify-content: center; /*centrar los objetos*/
+    }
+
+    .References-NavBar { 
+        display: grid; /*poner los objetos en una cuadrícula*/
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 10px; /*espacio entre los objetos*/
+        justify-items: center; /*centrar los objetos*/
+    }
+
+    .navbar {
+        flex-direction: column; /*poner los objetos en una columna*/
+        align-items: center; /*centrar los objetos*/
+    }
+
+    .Img-NavBar{
+        text-align: center;
+    }
+
+    .card-Internas{
+        text-align: center;
+    }
+
+    h1, h2, h3, p, .Img-Perfil{
+        text-align: center; /*centrar el texto del h2*/
+    }
 }
