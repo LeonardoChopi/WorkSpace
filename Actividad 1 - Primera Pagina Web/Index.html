@@ -42,7 +42,7 @@
     </nav>
     </div>
     
-    <div><!-- Contenedor Principal -->
+    <div class="ContenedorCards"><!-- Contenedor Principal -->
 
         <!-- Sobre Mí -->
         <section id="sobre-Mí" class="Card-Seccion">  <!-- Seccion 1 -->
@@ -150,6 +150,10 @@
                         <label for="nombre">Nombre: </label><br> <!-- Etiqueta para el campo de nombre -->
                         <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre aquí" required><br><br> <!-- Campo de entrada para el nombre -->
 
+                        <!-- Campo para que al corresponsal le llegue con estilo tipo tabla -->
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
+                        <input type="hidden" name="_template" value="table">
+
                     <p>    </p> <!-- Espacio en blanco entre los campos -->
 
                         <label for="email">Correo electrónico: </label><br> <!-- Etiqueta para el campo de correo electrónico -->
@@ -157,7 +161,7 @@
                     </div>
                     <br>
                     <div class="Cent-Form">                        
-                        <label for="tel">Telefono: </label><br> <!-- Etiqueta para el campo de Telefono -->
+                        <label for="telefono">Telefono: </label><br> <!-- Etiqueta para el campo de Telefono -->
                         <input type="tel" id="telefono" name="telefono" placeholder="Escribí tu Telefono aquí" required><br><br> <!-- Campo de entrada para el Telefono -->
 
                     <p>    </p> <!-- Espacio en blanco entre los campos -->
