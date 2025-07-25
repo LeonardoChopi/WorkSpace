@@ -64,6 +64,41 @@ body {
   align-items: center ; /*alinear los objetos al centro*/
 }
 
+/*Seccion de cards internas para la parte Sobre Mi*/
+.Card-SobreMi {
+    display: flex !important;
+    flex-direction: row !important; /* fuerza dirección horizontal */
+    gap: 20px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.Card-SobreMi2 {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #ffffff;
+    flex: 1;
+    width: calc(50% - 10px); /* 50% menos la mitad del gap */
+}
+
+/*Seccion especifica para Redes Tecnologicas*/
+.Redes {
+    display: flex; /* convierte el contenedor en flexbox */
+    flex-direction: column; /* coloca los botones en columna */
+    justify-content: center; /* centra verticalmente */
+    align-items: center; /* centra horizontalmente */
+    gap: 15px; /* espacio entre botones */
+    width: calc(33.33% - 13px); /* ajusta el ancho para 3 cards */
+}
+.Redes a {
+    width: 80%; /* hace que ambos botones tengan el mismo ancho */
+    text-align: center; /* centra el texto dentro del botón */
+    display: block; /* hace que ocupen toda la línea */
+}
+
+/*Centrado del formulario */
 .Cent-Form {
     display: flex; /*poner todos los objetos en una fila*/
     justify-content: center; /*centrar los objetos*/
@@ -186,6 +221,21 @@ a.no-style {
 
     .Img-NavBar{
         text-align: center; /*centrar la imagen del navbar*/
+    }
+
+    /* Hacer que las cards internas de Sobre Mí se pongan en columna */
+    .Card-SobreMi {
+        flex-direction: column !important; /* cambiar a columna */
+        align-items: center; /* centrar las cards */
+    }
+    
+    .Card-SobreMi2 {
+        width: 90%; /* usar casi todo el ancho disponible */
+        margin-bottom: 15px; /* espacio entre cards */
+    }
+    
+    .Redes {
+        width: 90%; /* mismo ancho que las otras cards */
     }
 
     /* Estilos para las Cards internas*/
