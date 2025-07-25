@@ -3,7 +3,9 @@ body {
     background-color: #a9c4dc; /*color de fondo*/
     font-family: 'Comic Sans MS', sans-serif;/*fuente*/
 }
-
+.Gracias-Body {
+    background-color: rgb(228, 241, 253); /*color de fondo*/
+}
 
 /* Estilos para los encabezados o navbar */
 .navbar {
@@ -152,6 +154,18 @@ input, textarea, select{
 /* Estilos para los Footer */
 footer {
     text-align: center; /*alinear el texto al centro*/
+}
+
+/* Estilos para los enlaces especifico */
+a.no-style {
+    /* Quitar Estilo de botones (a) definido anteriormente*/
+    color: inherit; /*color del texto del enlace sin estilo*/
+    padding: 0; /*sin espaciado del enlace sin estilo*/
+    border-radius: 0; /*sin bordes redondeados del enlace sin estilo*/
+
+    /* Decorar solo este boton*/
+    background-color: rgb(231, 230, 230); /*color de fondo del enlace sin estilo*/
+    color: rgb(0, 0, 137);
 }
 
 
