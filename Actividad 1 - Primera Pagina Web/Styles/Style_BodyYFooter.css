@@ -1,0 +1,14 @@
+/*Estilos generales del sitio web*/
+body {
+    background-color: #a9c4dc; /*color de fondo*/
+    font-family: 'Comic Sans MS', sans-serif;/*fuente*/
+}
+
+.Gracias-Body {
+    background-color: rgb(228, 241, 253); /*color de fondo*/
+}
+
+/* Estilos para los Footer */
+footer {
+    text-align: center; /*alinear el texto al centro*/
+}

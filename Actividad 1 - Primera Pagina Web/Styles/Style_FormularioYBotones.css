@@ -1,0 +1,58 @@
+/*Centrado del formulario */
+.Cent-Form {
+    display: flex; /*poner todos los objetos en una fila*/
+    justify-content: center; /*centrar los objetos*/
+    align-items: center; /*alinear los objetos al centro*/
+    flex-direction: row; /* En computadora es fija fila */
+    flex-wrap: wrap;     /* Por si hay muchos elementos */
+}
+
+
+/* Estilos para los botones */
+a,.BotonForm, btn-aceptar {
+    text-decoration: none; /*sin subrayado*/
+    background-color: #b3dcff; /*color de fondo del boton*/
+    color: black; /*color del texto del boton*/
+    padding: 10px 20px; /*espaciado del boton*/
+    /* border: none; sin borde */
+    border-radius: 5px; /*bordes redondeados del boton*/
+}   
+
+.BotonProy:visited {
+     color: #373737; /*color del texto del enlace visitado */
+}
+
+.BotonForm:hover {
+    border: black 2px solid; /*borde del boton al pasar el mouse*/
+    background-color: #81c1f9; /*color de fondo del boton al pasar el mouse*/
+    color: rgb(48, 48, 48); /*color del texto del boton al pasar el mouse*/
+}
+a:hover {
+    border: black 2px solid; /*borde del boton al pasar el mouse*/
+    background-color: #81c1f9; /*color de fondo del enlace al pasar el mouse*/
+    color: rgb(48, 48, 48); /*color del texto del boton al pasar el mouse*/
+}
+
+
+/* Estilos para los formularios */
+input, textarea, select{
+    /* width: 30%; ancho del input */
+    padding: 10px; /*espaciado del input*/
+    border-radius: 5px; /*bordes redondeados del input*/
+    border: 1px solid #ccc; /*borde del input*/
+    box-sizing: border-box; /*caja del input*/
+    margin-bottom: 10px; /*margen inferior del input*/
+    text-align: center;
+}
+
+/* Estilos para los enlaces especifico */
+a.no-style {
+    /* Quitar Estilo de botones (a) definido anteriormente*/
+    color: inherit; /*color del texto del enlace sin estilo*/
+    padding: 0; /*sin espaciado del enlace sin estilo*/
+    border-radius: 0; /*sin bordes redondeados del enlace sin estilo*/
+
+    /* Decorar solo este boton*/
+    background-color: rgb(231, 230, 230); /*color de fondo del enlace sin estilo*/
+    color: rgb(0, 0, 137);
+}

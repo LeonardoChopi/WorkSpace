@@ -1,0 +1,22 @@
+/* Estilos para los encabezados o navbar */
+.navbar {
+    border-radius: 15px; /*bordes redondeados*/
+    background-color: #b3dcff; /*color de fondo del navbar*/
+    padding: 10px; /*espaciado del navbar*/
+    display: flex; /*poner tods los objetos en una fila*/
+    justify-content: space-between; /*espacio entre los objetos*/
+    align-items: center; /*alinear los objetos al centro*/
+    gap: 10px; /*espacio entre los objetos*/
+    flex-wrap: wrap; /*permitir que los objetos se ajusten a la pantalla*/
+}
+
+.References-NavBar {
+    display: flex; /*poner tods los objetos en una fila*/
+    gap: 15px; /*espacio entre los objetos*/
+    flex-wrap: nowrap; /*no permitir que los objetos se ajusten a la pantalla en pc*/
+}
+
+.Img-NavBar {
+   width: 100px; /*ancho de la imagen del navbar*/
+   height: auto; /*alto de la imagen del navbar*/
+}

@@ -1,0 +1,55 @@
+/* Estilos para pantallas pequeñas (celulares) */
+@media screen and (max-width: 768px) { /*768 Es el punto de quiebre estándar (breakpoint)*/
+    /* Estilos para los encabezados o navbar de celular*/
+    .navbar {
+        flex-direction: column; /*poner los objetos en una columna*/
+        align-items: center; /*centrar los objetos*/
+    }
+
+    .References-NavBar { 
+        display: grid; /*poner los objetos en una cuadrícula*/
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 10px; /*espacio entre los objetos*/
+        justify-items: center; /*centrar los objetos*/
+    }
+
+    .Img-NavBar{
+        text-align: center; /*centrar la imagen del navbar*/
+    }
+
+    /* Hacer que las cards internas de Sobre Mí se pongan en columna */
+    .Card-SobreMi {
+        flex-direction: column !important; /* cambiar a columna */
+        align-items: center; /* centrar las cards */
+    }
+    
+    .Card-SobreMi2 {
+        width: 90%; /* usar casi todo el ancho disponible */
+        margin-bottom: 15px; /* espacio entre cards */
+    }
+    
+    .Redes {
+        width: 90%; /* mismo ancho que las otras cards */
+    }
+
+    /* Estilos para las Cards internas*/
+    .card-Internas{
+        text-align: center; 
+    }
+
+    /*estilos algunos de los texto de la pagina*/
+    h1, h2, h3, p, .Img-Perfil{
+        text-align: center; /*centrar el texto del h2*/
+    }
+
+    /* Estilos para contacto */
+    input, textarea, select {
+        width: 90%; /*ancho del input en celular*/
+    }
+
+    /* centrar el formulario en los celulares */
+    .Cent-Form {
+        align-items: center; /*centrar los objetos*/
+        justify-content: center; /*centrar los objetos*/
+    }
+}

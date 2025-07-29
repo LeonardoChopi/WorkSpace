@@ -1,0 +1,38 @@
+/* Estilos y funcion del aviso de cookies */
+.oculto {
+  display: none; /* Oculta el aviso de cookies por defecto */
+}
+
+.aviso-cookies {
+  background-color: #81c1f9; /* Color de fondo del aviso */
+  color: black; /* Color del texto del aviso */
+  padding: 15px; /* Espaciado interno del aviso */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+  text-align: center; /* Alinear el texto al centro */
+  z-index: 9999; /* Asegurarse de que el aviso esté por encima de otros elementos */
+  transition: transform 0.3s ease; /* Transición suave para ocultar el aviso */
+  margin: 0; /* Eliminar márgenes */
+  max-width: 400px; /* Ancho máximo del aviso */
+  /* Centrar el aviso en la pantalla */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Mueve el elemento a la mitad exacta */
+}
+
+.btn-aceptar {
+  background-color: #00b7ff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 6px 12px; /* Espaciado interno del botón */
+  border-radius: 4px; /* Bordes redondeados del botón */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+#aceptar-cookies:checked + .aviso-cookies {
+  transform: translate(0% 0%) scale(0.5); /* Se queda en el lugar y se achica */
+  opacity: 0; /* Se desvanece */
+  pointer-events: none; /* Evita que siga siendo clickeable */
+}
+.aviso-cookies {
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+}
