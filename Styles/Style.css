@@ -2,5 +2,4 @@
 @import "Style_NavBar.css"; /* Importar estilos del navbar */
 @import "Style_Cards.css"; /* Importar estilos de las tarjetas */
 @import "Style_FormularioYBotones.css"; /* Importar estilos de formularios y botones */ 
-@import "Style_MensajeTipoCookis.css"; /* Importar estilos de mensajes tipo cookies */
 @import "Style_Celular.css"; /* Importar estilos para pantallas pequeñas (celulares) */

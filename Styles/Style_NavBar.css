@@ -10,6 +10,21 @@
     flex-wrap: wrap; /*permitir que los objetos se ajusten a la pantalla*/
 }
 
+.menu-desplegable {
+    display: none; /* oculto en PC */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+
 .References-NavBar {
     display: flex; /*poner tods los objetos en una fila*/
     gap: 15px; /*espacio entre los objetos*/

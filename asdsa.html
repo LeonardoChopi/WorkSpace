@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsivo</title>
+    <style>
+        /* Estilos base para el menú */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            position: relative; /* Necesario para el posicionamiento del botón */
+        }
+
+        .menu-toggle {
+            display: none; /* Oculto en pantallas grandes */
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Muestra los elementos en línea */
+        }
+
+        .nav-menu li {
+            margin-right: 20px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Estilos para pantallas pequeñas (modo responsivo) */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; /* Muestra el botón en pantallas pequeñas */
+            }
+
+            .nav-menu {
+                display: none; /* Oculta el menú por defecto */
+                flex-direction: column; /* Muestra los elementos en columna */
+                position: absolute;
+                top: 60px; /* Ajustar según la altura de la barra */
+                left: 0;
+                width: 100%;
+                background-color: #444;
+                padding: 10px 0;
+            }
+
+            .nav-menu li {
+                margin-right: 0;
+                text-align: center;
+            }
+
+            .nav-menu.active {
+                display: flex; /* Muestra el menú cuando la clase 'active' está presente */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <button class="menu-toggle" id="menuBtn">&#9776;</button> <!-- Botón hamburguesa -->
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contenido de la Página</h1>
+        <p>Este es el contenido principal de la página.</p>
+    </main>
+
+    <script>
+        
+    </script>
+
+</body>
+</html>

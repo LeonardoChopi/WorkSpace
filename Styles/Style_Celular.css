@@ -6,6 +6,13 @@
         align-items: center; /*centrar los objetos*/
     }
 
+    .nav-menu{
+        display: none; /*ocultar el menu*/  
+    }
+    .menu-desplegable{
+        display: flex;
+    }
+
     .References-NavBar { 
         display: grid; /*poner los objetos en una cuadrícula*/
         grid-template-columns: repeat(2, 1fr); /* 2 columnas */
@@ -15,6 +22,8 @@
 
     .Img-NavBar{
         text-align: center; /*centrar la imagen del navbar*/
+        width: 40px; /*ancho de la imagen del navbar*/
+        height: auto; /*alto de la imagen del navbar*/   
     }
 
     /* Hacer que las cards internas de Sobre Mí se pongan en columna */

@@ -9,35 +9,22 @@
     <meta name="description" content="Pagina tipo CV de Leonardo Chopitea."> <!-- Descripcion de la pagina -->
     <title>Trabajo JC</title> <!-- Titulo de la pagina -->
 
-
+    <!-- scipt -->
+     <script src="Scripts/menudesplgable.js"></script>
+     <script src="Scripts/formulario.js"></script>
 </head>
-<body>
-    <div class="MesajeTipoCookies"> <!-- Mensaje de cookies -->
-        <input type="checkbox" id="aceptar-cookies" class="oculto"> <!-- Checkbox oculto para aceptar cookies -->
-         <div class="aviso-cookies"> <!-- Aviso de cookies -->
-            <p> 
-             Página desarrollada para el curso de Jóvenes Creativos. 
-            </p>
-         <br>
-         <label for="aceptar-cookies" class="btn-aceptar">Aceptar</label> <!-- Boton para aceptar cookies -->
-        </div> 
-    </div> 
+<body> 
 
     <div class="navbar"> <!-- Barra de navegacion -->
     <h1>Portafolio de Leo Chopi</h1> <!-- Titulo de la pagina -->
     <nav class="References-NavBar"> <!-- Navegacion de la barra -->
-        <a href="#sobre-Mí">
-            <img src="Img/SobreMi.png" alt="Sobre Mí" class="Img-NavBar">
-        </a>
-        <a href="#proyectos">
-            <img src="Img/Proyectos.png" alt="Proyectos" class="Img-NavBar">
-        </a>
-        <a href="#referencias">
-            <img src="Img/Referencias.png" alt="Referencias" class="Img-NavBar">
-        </a>
-        <a href="#contactos">
-            <img src="Img/Contactos.png" alt="Contactos" class="Img-NavBar">
-        </a>
+        <button class="menu-desplegable" id="menuBtn">&#9776;</button> <!-- Botón hamburguesa -->
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#sobre-Mí"><img src="Img/SobreMi.png" alt="Sobre Mí" class="Img-NavBar"></a></li>
+            <li><a href="#proyectos"><img src="Img/Proyectos.png" alt="Proyectos" class="Img-NavBar"></a></li>
+            <li><a href="#referencias"><img src="Img/Referencias.png" alt="Referencias" class="Img-NavBar"></a></li>
+            <li><a href="#contactos"><img src="Img/Contactos.png" alt="Contactos" class="Img-NavBar"></a></li>
+        </ul>
     </nav>
     </div>
     
@@ -48,7 +35,7 @@
             <h2>Sobre Mí</h2> <!-- Titulo de la seccion -->
             
             <div>
-                <img src="Perfil.jpg" alt="Foto de Perfil" width="200" height="200" class="Img-Perfil"> <!-- Imagen de perfil -->
+                <img src="" alt="Foto de Perfil" width="200" height="200" class="Img-Perfil"> <!-- Imagen de perfil -->
                 <h3>Leonardo Chopitea</h3> <!-- Nombre de la persona-->
             </div>
             <div class="descripcion"> <!-- Descripcion de la persona -->
@@ -75,7 +62,7 @@
                         <li>UTU - Bachillerato en Informática (2023-2025)</li> <!-- Educacion 1-->
                         <li>Liceo - Liceo Zanzi (2020-2022)</li> <!-- Educacion 2-->
                         <li>Cursos Online - Jovenes creativos - Emprendimiento y Desarrollo Web  (2025)</li> <!-- Educacion 3-->
-                        <li>Título de campeón de las <a class="no-style" href="#proyectos" >olimpiadas</a> de programación de segundo ciclo - Ceibal (2024)</li>
+                        <li>Título de ganador de las <a class="no-style" href="#proyectos" >olimpiadas</a> de programación de segundo ciclo - Ceibal (2024)</li>
                     </ul>
                 </div>
                 <div class="Card-SobreMi2 Redes"> <!-- Contenedor de redes sociales -->
@@ -120,7 +107,7 @@
             <div class="Card-References"> <!-- Contenedor de referencias -->
                 <div> <!-- Card Template References -->
                     <div class="card-Internas"> <!-- Referencia 1 -->
-                         <div><img src="img/armando_banq.jpg" alt="ImgReference"></div>
+                         <div><img src="" alt="ImgReference"></div>
                             <h4>Nombre: Armando Banquitos</h4>
                             <p>Ocupación/Título: Gerente de Proyectos en Constructora Sur S.A.</p> 
                             <p>Referencia: Fue mi supervisor directo durante 3 años en el área de obras civiles.</p> 
@@ -129,7 +116,7 @@
                          </div>
                          <br>
                          <div class="card-Internas"> <!-- Referencia 2 -->
-                                <div><img src="img/armando_casas.jpg" alt="ImgReference"></div>
+                                <div><img src="" alt="ImgReference"></div>
                                 <h4>Nombre: Armando Casas</h4>
                                 <p>Ocupación/Título: Arquitecto independiente</p> 
                                 <p>Referencia: Colaboramos en varios proyectos residenciales entre 2020 y 2023.</p> 
@@ -138,7 +125,7 @@
                          </div>
                          <br>
                          <div class="card-Internas"> <!-- Referencia 3 -->
-                                <div><img src="img/elvis_nieto.jpg" alt="ImgReference"></div>
+                                <div><img src="" alt="ImgReference"></div>
                                 <h4>Nombre: Elvis Nieto</h4>
                                 <p>Ocupación/Título: Jefe de Tecnología en TecnoSoluciones S.R.L.</p>
                                 <p>Referencia: Trabajo conjunto en implementación de soluciones IT para clientes corporativos.</p>
@@ -155,7 +142,7 @@
             <h2>Contactos</h2 class="Card-Seccion"> <!-- Titulo de la seccion -->
 
             <div> <!-- Contenedor de contactos -->
-                <form action="https://formsubmit.co/leonardochopitea2008@gmail.com" method="POST"> <!-- Formulario de contacto -->
+                <form  id="formulario"> <!-- Formulario de contacto -->
                     <input type="hidden" name="_captcha" value="false"> <!-- Desactivar captcha -->
                     <input type="hidden" name="_next" value="https://proyectojc.website/gracias"> <!-- Redireccionar a la pagina de gracias -->
 
@@ -179,8 +166,8 @@
 
                     <p>    </p> <!-- Espacio en blanco entre los campos -->
 
-                        <label for="tipo-contacto">Tipo de contacto: </label>
-                            <select id="tipo-contacto" name="tipo-contacto" required>
+                        <label for="tipocontacto">Tipo de contacto: </label>
+                            <select id="tipocontacto" name="tipocontacto" required>
                              <option value="" disabled selected hidden>Elegí una opción</option>
                              <option value="consulta">Consulta</option>
                              <option value="reclamo">Reclamo</option>
