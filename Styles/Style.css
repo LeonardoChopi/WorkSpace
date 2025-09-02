@@ -3,3 +3,5 @@
 @import "Style_Cards.css"; /* Importar estilos de las tarjetas */
 @import "Style_FormularioYBotones.css"; /* Importar estilos de formularios y botones */ 
 @import "Style_Celular.css"; /* Importar estilos para pantallas pequeñas (celulares) */
+@import "Style_BarraDeProgreso.css"; /* Importar estilos de la barra de progreso */
+

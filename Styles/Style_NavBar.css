@@ -12,16 +12,16 @@
 
 .menu-desplegable {
     display: none; /* oculto en PC */
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
+    font-size: 24px; /* tamaño del icono */
+    background: none; /* fondo transparente o sin*/
+    border: none; /* quitar el borde */
+    cursor: pointer; /* cambiar el cursor al pasar por encima */
 }
 
 .nav-menu {
-    display: flex;
-    list-style-type: none;
-    gap: 15px;
+    display: flex; /*poner tods los objetos en una fila*/
+    list-style-type: none; /*quitar los puntos de la lista*/
+    gap: 15px; /*espacio entre los objetos*/
 }
 
 

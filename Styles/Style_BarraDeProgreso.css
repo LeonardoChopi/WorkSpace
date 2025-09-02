@@ -1,0 +1,99 @@
+ol {
+    list-style: none; /* quitar los puntos de la lista */
+}
+
+.Skills {
+    display: flex; /* poner los objetos en una fila */
+    align-items: center; /* alinear los objetos al centro */
+}
+
+li {
+    margin-right: 10px; /* espacio entre el texto y la barra */
+    font-weight: bold; /* poner el texto en negrita */
+}
+
+.progress-container {
+    width: 200px; /* ancho de la barra */
+    height: 10px; /* alto de la barra */
+    background-color: #e0e0e0; /* color de fondo de la barra */
+    border-radius: 5px; /* bordes redondeados */
+    margin-left: 10px; /* espacio entre el texto y la barra */
+}
+
+.progress-bar {
+    height: 100%; /* alto de la barra */
+    width: 0%; /* ancho inicial de la barra */
+    transition: width 1s ease-out; /* animación de la barra */
+    border-radius: 5px; /* bordes redondeados */
+}
+
+.html {
+    background-color: #c94828; /* color de la barra */
+    animation: progressHtml 4s forwards; /* animación de la barra */
+}
+
+.css {
+    background-color: #004af5; /* color de la barra */
+    animation: progressCss 4s forwards; /* animación de la barra */
+}
+
+.js {
+    background-color: #ffdd00; /* color de la barra */
+    animation: progressJs 4s forwards; /* animación de la barra */
+}
+
+.git {
+    background-color: #ff2a00; /* color de la barra */
+    animation: progressGit 4s forwards; /* animación de la barra */
+}
+
+.java {
+    background-color: #007396; /* color de la barra */
+    animation: progressJava 4s forwards; /* animación de la barra */
+}
+
+.php {
+    background-color: #6249ad; /* color de la barra */
+    animation: progressPhp 4s forwards; /* animación de la barra */
+}
+
+.AS {
+    background-color: #00ff4c; /* color de la barra */
+    animation: progressAS 4s forwards; /* animación de la barra */
+}
+
+/* @keyframes define los pasos de una animación */
+@keyframes progressHtml {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 85%; } /* ancho final de la barra */
+}
+
+@keyframes progressCss {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 70%; } /* ancho final de la barra */
+}
+
+@keyframes progressJs {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 30%; } /* ancho final de la barra */
+}
+
+@keyframes progressGit {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 90%; } /* ancho final de la barra */
+}
+
+@keyframes progressJava {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 45%; } /* ancho final de la barra */
+}
+
+@keyframes progressPhp {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 15%; } /* ancho final de la barra */
+}
+
+@keyframes progressAS {
+    0% { width: 0%; } /* ancho inicial de la barra */
+    100% { width: 10%; } /* ancho final de la barra */
+}

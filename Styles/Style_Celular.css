@@ -10,7 +10,7 @@
         display: none; /*ocultar el menu*/  
     }
     .menu-desplegable{
-        display: flex;
+        display: flex; /*mostrar el menu*/
     }
 
     .References-NavBar { 

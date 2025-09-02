@@ -33,21 +33,29 @@
 
 /*Seccion de cards internas para la parte Sobre Mi*/
 .Card-SobreMi {
-    display: flex !important;
+    display: flex !important; /* convierte el contenedor en flexbox */
     flex-direction: row !important; /* fuerza dirección horizontal */
-    gap: 20px;
-    align-items: stretch;
-    width: 100%;
+    gap: 20px; /* espacio entre las tarjetas */
+    align-items: stretch; /* alinea las tarjetas para que tengan la misma altura */
+    width: 100%; /* ocupa todo el ancho del contenedor padre */
 }
 
 .Card-SobreMi2 {
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    background-color: #ffffff;
-    flex: 1;
+    border-radius: 15px; /*bordes redondeados*/
+    border: 1px solid #ccc; /*borde de la tarjeta*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*sombra de la tarjeta*/
+    padding: 20px; /*espaciado de la tarjeta*/
+    background-color: #ffffff; /*color de fondo de la tarjeta*/
+    flex: 1; /* cada tarjeta ocupa el mismo espacio */
     width: calc(50% - 10px); /* 50% menos la mitad del gap */
+}
+
+/*Seccion especifica para Skills*/
+.Card-Skills {
+    display: flex; /* convierte el contenedor en flexbox */
+    flex-direction: column; /* coloca los botones en columna */
+    justify-content: center; /* centra verticalmente */
+    align-items: center; /* centra horizontalmente */
 }
 
 /*Seccion especifica para Redes Tecnologicas*/

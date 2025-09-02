@@ -54,5 +54,5 @@ a.no-style {
 
     /* Decorar solo este boton*/
     background-color: rgb(231, 230, 230); /*color de fondo del enlace sin estilo*/
-    color: rgb(0, 0, 137);
+    color: rgb(0, 0, 137); /*color del texto del enlace sin estilo*/
 }

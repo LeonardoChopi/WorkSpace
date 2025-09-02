@@ -8,7 +8,21 @@ body {
     background-color: rgb(228, 241, 253); /*color de fondo*/
 }
 
-/* Estilos para los Footer */
-footer {
-    text-align: center; /*alinear el texto al centro*/
+/* Estilos para el footer */
+.licencia footer {
+    all: unset;              /* resetea estilos heredados */
+    display: block;          /* vuelve a ser bloque */
+    text-align: center;      /* centra horizontalmente */
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;        /* separa un poco del contenido de arriba */
+}
+
+.licencia .Licence {
+    all: unset;              /* resetea los enlaces */
+    color: blue;             /* elegí el color que quieras */
+    text-decoration: none; /* quita el subrayado */
+}
+.licencia .Licence:hover {
+    text-decoration: underline; /* subraya al pasar el ratón */
 }
